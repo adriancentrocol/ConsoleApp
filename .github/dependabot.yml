@@ -8,8 +8,7 @@ updates:
   - package-ecosystem: "nuget"
     directory: "/" 
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
+      interval: "daily"
     reviewers:
       - "adriancentrocol"
     labels:
@@ -21,4 +20,4 @@ registries:
   github-nuget:
     type: "nuget-feed"
     url: "https://nuget.pkg.github.com/adriancentrocol/index.json"
-    token: "${{ secrets.NUGET_STORE_PAT }}"
+    token: ${{ secrets.NUGET_STORE_PAT }}
